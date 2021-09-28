@@ -315,7 +315,7 @@ function UpdateDocsMsPackages($DocConfigFile, $Mode, $DocsMetadata) {
         -InputObject $package.package_info `
         -MemberType NoteProperty `
         -Name 'extra_index_url' `
-        -Value $extraIndexFeed `
+        -Value $PackageSourceOverride `
         -PassThru `
         -Force 
     }
